@@ -24,6 +24,11 @@ When the timeout is enabled, a `clearTimeout` method is attached to the request.
 
 	function(req, res, next){
 	    req.clearTimeout();
+	    setTimeout(function(){
+	      res.writeHead(200);
+	      res.end();
+	      // this will work
+	    }, 20000);
 	}
 
 ## Author

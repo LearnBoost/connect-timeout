@@ -9,7 +9,7 @@ module.exports = function responseTimeout(options){
         , at = req.method + ' ' + req.url
         , timer = setTimeout(function(){
               if (options.throwError){
-                next(new Error('Timeout'));
+                next(new Error('Timeout ' + at));
               } else {
                 res.writeHead(options.code);
                 res.end();

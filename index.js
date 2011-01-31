@@ -6,6 +6,7 @@ module.exports = function responseTimeout(options){
     
     return function responseTimeout(req, res, next){
       var writeHead = res.writeHead,
+          at = req.method + ' ' + req.url
           timer = setTimeout(function(){
               if (options.throwError){
                 next(new Error('Timeout'));

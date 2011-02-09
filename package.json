@@ -1,0 +1,10 @@
+{
+  "name": "connect-timeout"
+, "description": "Adds timeouts to connect responses"
+, "version": "0.0.1"
+, "author": "Guillermo Rauch <guillermo@learnboost.com>"
+, "keywords": ["connect", "timeout", "response"]
+, "dependencies": {}
+, "main": "index"
+, "engines": { "node": ">= 0.2.0" }
+}
